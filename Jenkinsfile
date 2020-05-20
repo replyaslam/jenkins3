@@ -31,8 +31,8 @@ node {
     	//CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReWcAQWPD3aW8nDrOCME0tco5iZVtBXmrxipj.I4.bBDoLf9nvlLSB_MD1x9l'
    
 	//org2
-    	//HUB_ORG='replyamijenkins2@yahoo.com'
-    	//CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNxpVCR7MTUpN2p3X_QwOuxYW06UtWllKu5y_bKKTf5VkTl3y2VBut3S7MbzZ'
+    	HUB_ORG='replyamijenkins2@yahoo.com'
+    	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNxpVCR7MTUpN2p3X_QwOuxYW06UtWllKu5y_bKKTf5VkTl3y2VBut3S7MbzZ'
 
     //org3
         HUB_ORG='replyamijenkins3@yahoo.com'
