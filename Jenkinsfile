@@ -35,8 +35,13 @@ node {
     	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNxpVCR7MTUpN2p3X_QwOuxYW06UtWllKu5y_bKKTf5VkTl3y2VBut3S7MbzZ'
 
     //org3
+	//this is for work laptop
         HUB_ORG='replyamijenkins3@yahoo.com'
         CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQptH_b9eqXjBg_pmLxuvsP4vYFeezkbcj6FvQKn8enDchwll3_a9gTT0Pm7NV'
+	
+	//this is for Laptop1
+	CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpvzjHIKwt9LxyEPDEPXzgS.Y_X6ao83CTg49SJJCv6TBbnPSY1XruTcBxcm2'
+	JWT_KEY_CRED_ID='41dd590b-4a06-4657-ad5e-65ec5fa3f89b'
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
