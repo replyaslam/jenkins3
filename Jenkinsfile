@@ -40,6 +40,7 @@ node {
 	
 	//this is for Laptop1/work laptop
 	CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpvzjHIKwt9LxyEPDEPXzgS.Y_X6ao83CTg49SJJCv6TBbnPSY1XruTcBxcm2'
+	
 	JWT_KEY_CRED_ID='0f25b974-d7a2-496b-b5ca-95928a86f995'
 
 	//this is for Laptop2/personal -spectre laptop
