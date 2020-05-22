@@ -35,14 +35,18 @@ node {
     	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNxpVCR7MTUpN2p3X_QwOuxYW06UtWllKu5y_bKKTf5VkTl3y2VBut3S7MbzZ'
 
     //org3
-	//this is for work laptop
+	SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins3@yahoo.com'
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQptH_b9eqXjBg_pmLxuvsP4vYFeezkbcj6FvQKn8enDchwll3_a9gTT0Pm7NV'
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQptH_b9eqXjBg_pmLxuvsP4vYFeezkbcj6FvQKn8enDchwll3_a9gTT0Pm7NV'
 	
 	//this is for Laptop1
-	CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpvzjHIKwt9LxyEPDEPXzgS.Y_X6ao83CTg49SJJCv6TBbnPSY1XruTcBxcm2'
-	JWT_KEY_CRED_ID='a75e4553-f223-438a-8d49-1c0b2796f0a4'
+	//CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpvzjHIKwt9LxyEPDEPXzgS.Y_X6ao83CTg49SJJCv6TBbnPSY1XruTcBxcm2'
+	//JWT_KEY_CRED_ID='a75e4553-f223-438a-8d49-1c0b2796f0a4'
 
+	//this is for Laptop2
+	CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'
+	JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'
+	
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             if (isUnix()) {
