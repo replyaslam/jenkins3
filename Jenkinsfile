@@ -23,15 +23,14 @@ node {
         checkout scm
     }
 
-
-    //org3
 	SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins3@yahoo.com'
+    HUB_ORG='replyamijenkins3@yahoo.com'
 	
 	//this is for Laptop1/work laptop
 	CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpvzjHIKwt9LxyEPDEPXzgS.Y_X6ao83CTg49SJJCv6TBbnPSY1XruTcBxcm2'	
 	JWT_KEY_CRED_ID='bc64c8bb-5a0b-4354-8cb3-dfc44f922adb'
 	
+
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             if (isUnix()) {
@@ -52,11 +51,26 @@ node {
 				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
 				println "toolbelt-AI:"
-				println "\"${toolbelt}\" force:source:deploy --sourcepath manifest/. -u ${HUB_ORG}"				
-				println "\"${toolbelt}\" force:source:deploy --manifest manifest/. -u ${HUB_ORG}"
+				println "\"${toolbelt}\" force:source:deploy --sourcepath manifest/. -u ${HUB_ORG}"
+			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --sourcepath manifest/. -u ${HUB_ORG}"
+				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy -m ApexClass"
+                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:retrieve --manifest c:\projects_sfdx\jenkins2\manifest\package.xml"
+                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:retrieve --manifest c:\projects_sfdx\jenkins2\manifest\package.xml"
+                //rmsg = bat returnStdout: true, script: "sfdx force:source:deploy --sourcepath c:\projects_sfdx\jenkins2\force-app\main\default\classes\AccountController.cls"
+				//println "\"${toolbelt}\" force:source:deploy --sourcepath force-app\main\default\classes\AccountController.cls"
+				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --sourcepath force-app\main\default\classes\AccountController.cls"
+				//$ sfdx force:source:deploy -m ApexClass
 				
-				rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest manifest/package.xml -u ${HUB_ORG}"
-                		//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"                
+				println "\"${toolbelt}\" force:source:deploy --manifest manifest/. -u ${HUB_ORG}"
+				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest ./manifest/package.xml -u ${HUB_ORG}"
+				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+                //sfdx force:source:deploy --sourcepath c:\projects_sfdx\jenkins2\force-app\main\default\classes\AccountController.cls
+
+                //sfdx force:source:deploy --manifest c:\projects_sfdx\jenkins2\manifest\package.xml
+                rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest manifest/package.xml -u ${HUB_ORG}"
+                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+                
 				
 			println('AI-1')	
 			}
@@ -67,3 +81,4 @@ node {
         }
     }
 }
+
