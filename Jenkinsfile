@@ -55,8 +55,18 @@ node {
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins1@yahoo.com'
         CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLRecCUlZczZHBwR5z65mioXYYHfGMM8CRXmth2HYqJKPiTxl._PYI9p7NyXuGm'
-        
+
         JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this is for Laptop2
+
+
+        //replyamijenkins2@yahoo.com
+        SFDC_HOST='https://login.salesforce.com'
+        HUB_ORG='replyamijenkins2@yahoo.com'
+        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNwTMu9ioZWVzaHgYS4m9IgZSU_8f5K2KD0REdjYN3tQBs2EE6G3rxToF7ztY'
+
+        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this is for Laptop2
+
+
 
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
