@@ -43,14 +43,6 @@ node {
         JWT_KEY_CRED_ID='a75e4553-f223-438a-8d49-1c0b2796f0a4'
 
         
-        //replyamijenkins3@yahoo.com
-        SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins3@yahoo.com'
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'
-
-        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this is for Laptop2
-
-
         //replyamijenkins1@yahoo.com
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins1@yahoo.com'
@@ -66,6 +58,13 @@ node {
 
         JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this is for Laptop2
 
+
+        //replyamijenkins3@yahoo.com
+        SFDC_HOST='https://login.salesforce.com'
+        HUB_ORG='replyamijenkins3@yahoo.com'
+        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'
+
+        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this is for Laptop2
 
 
 
