@@ -22,50 +22,35 @@ node {
         // when running in multi-branch job, one must issue this command
         checkout scm
     }
-
-    SFDC_HOST='https://login.salesforce.com'	 
-    JWT_KEY_CRED_ID='a11247e8-0a87-4fd4-9aac-0501268761c6'
-
-    	//org1
-    	//HUB_ORG='replyamijenkins1@yahoo.com'
-    	//CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReWcAQWPD3aW8nDrOCME0tco5iZVtBXmrxipj.I4.bBDoLf9nvlLSB_MD1x9l'
    
-	//org2
-    	HUB_ORG='replyamijenkins2@yahoo.com'
-    	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNxpVCR7MTUpN2p3X_QwOuxYW06UtWllKu5y_bKKTf5VkTl3y2VBut3S7MbzZ'
 
-    //org3
-        HUB_ORG='replyamijenkins3@yahoo.com'
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQptH_b9eqXjBg_pmLxuvsP4vYFeezkbcj6FvQKn8enDchwll3_a9gTT0Pm7NV'
-	
-        //this is for Laptop1
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'
-        JWT_KEY_CRED_ID='a75e4553-f223-438a-8d49-1c0b2796f0a4'
+    //JENKINS CREDENTIALS LAPTOP1 AND LAPTOP2-------------------------
+        JWT_KEY_CRED_ID='4ce2a556-336a-4c23-b76d-724dc06045ea'  //this uses server.key from Laptop1
+        //JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
 
-        
-        //replyamijenkins1@yahoo.com
+        //org1 
         SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins1@yahoo.com'
+        HUB_ORG='replyamijenkins1@yahoo.com'        
 
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLRecCUlZczZHBwR5z65mioXYYHfGMM8CRXmth2HYqJKPiTxl._PYI9p7NyXuGm'  //this uses server.crt from Laptop2
-        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
+        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReZGNLSvnQPrlIUhn9d3LpPkwPmslUu8PjsPVAO6myXIqyttMQdpBi4ehe7yH'  //this uses server.crt from Laptop1
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLRecCUlZczZHBwR5z65mioXYYHfGMM8CRXmth2HYqJKPiTxl._PYI9p7NyXuGm'  //this uses server.crt from Laptop2
+        
 
-
-        //replyamijenkins2@yahoo.com
+        //org2
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins2@yahoo.com'
 
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNwTMu9ioZWVzaHgYS4m9IgZSU_8f5K2KD0REdjYN3tQBs2EE6G3rxToF7ztY'  //this uses server.crt from Laptop2
-        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
+        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNzgZfh656KIRFlQOEp9Beiq2xm8ue4dInQ0XlHUOfWnghEK1jcDtNTGyCG9y' //this uses server.crt from Laptop1
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNwTMu9ioZWVzaHgYS4m9IgZSU_8f5K2KD0REdjYN3tQBs2EE6G3rxToF7ztY'  //this uses server.crt from Laptop2
+        
 
-
-        //replyamijenkins3@yahoo.com
+        //org3
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins3@yahoo.com'
  
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'  //this uses server.crt from Laptop2
-        JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
-
+        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpib7_3a4OqWLfDNeK_DeZUDBCc7t28hpBqObv38In8w2p3MKdD2xa9u8f7F0'  //this uses server.crt from Laptop1
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'  //this uses server.crt from Laptop2
+        
 
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
