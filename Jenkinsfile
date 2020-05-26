@@ -45,10 +45,10 @@ node {
         
 
         //org3
-        SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins3@yahoo.com'
+        //SFDC_HOST='https://login.salesforce.com'
+        //HUB_ORG='replyamijenkins3@yahoo.com'
  
-        CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpib7_3a4OqWLfDNeK_DeZUDBCc7t28hpBqObv38In8w2p3MKdD2xa9u8f7F0'  //this uses server.crt from Laptop1
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQpib7_3a4OqWLfDNeK_DeZUDBCc7t28hpBqObv38In8w2p3MKdD2xa9u8f7F0'  //this uses server.crt from Laptop1
         //CONNECTED_APP_CONSUMER_KEY='3MVG9sh10GGnD4Dt2J6frnovQphUDU7pg3OZsQBvAgFCZgwkSqDkh4WOQ6mwGue9rTQeQ24554C9.tdjqiPKp'  //this uses server.crt from Laptop2
         
 
