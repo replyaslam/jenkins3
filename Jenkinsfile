@@ -32,7 +32,9 @@ node {
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins1@yahoo.com'        
 
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReZGNLSvnQPrlIUhn9d3LpPkwPmslUu8PjsPVAO6myXIqyttMQdpBi4ehe7yH'  //this uses server.crt from Laptop1
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReZGNLSvnQPrlIUhn9d3LpPkwPmslUu8PjsPVAO6myXIqyttMQdpBi4ehe7yH'  //this uses server.crt from Laptop1
+	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ' //new openSSL version keys
+
         //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLRecCUlZczZHBwR5z65mioXYYHfGMM8CRXmth2HYqJKPiTxl._PYI9p7NyXuGm'  //this uses server.crt from Laptop2
         
 
