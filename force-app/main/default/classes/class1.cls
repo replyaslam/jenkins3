@@ -1,3 +1,3 @@
 public class class1 {
-//aslam1//aslam2,aslam3,aslam4.aslam5
+//aslam1//aslam2,aslam3
 }
