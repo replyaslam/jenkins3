@@ -59,6 +59,12 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             
+            when { tag "release-*" }
+            steps {
+                echo 'Deploying only because this commit is tagged...'
+                sh 'make deploy'
+            }
+
             println 'this is Windows'
             println "\"${toolbelt}\" force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${jwt_key_file}\" --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             
