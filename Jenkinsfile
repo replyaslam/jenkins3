@@ -18,6 +18,8 @@ node {
     println CONNECTED_APP_CONSUMER_KEY
     def toolbelt = tool 'toolbelt'
 
+	def branchname
+	
     stage('checkout source') {
 	//echo 'Pulling...' + env.BRANCH_NAME
 	echo 'Pulling... ' + env.GIT_BRANCH
@@ -26,17 +28,14 @@ node {
 	echo scm.branches[0].name
         checkout scm
 	echo scm.branches[0].name
-	    
+	branchname=scm.branches[0].name
 
     }
    
     stage('Example') {
-	 echo env.BRANCH_NAME   
-        if (env.BRANCH_NAME == 'develop') {
-            echo 'this is develop branch'
-        } else {
-            echo 'I is elsewhere'
-        }
+	 echo 'branchname:'
+	 echo branchname
+	 //echo env.BRANCH_NAME   
     }	
 	println "env.BRANCH_NAME:"
 	println(env.BRANCH_NAME) 
