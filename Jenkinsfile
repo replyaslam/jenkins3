@@ -44,16 +44,16 @@ node {
 	
 
     //JENKINS CREDENTIALS LAPTOP1 AND LAPTOP2-------------------------
-        JWT_KEY_CRED_ID='4ce2a556-336a-4c23-b76d-724dc06045ea'  //this uses server.key from Laptop1
+        JWT_KEY_CRED_ID='52e8269f-50fa-4054-a1b0-49448351c53f'  //this uses server.key from Laptop1
         //JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
 
 	if(branchname.contains('develop')) { 
             echo 'Develop branch here---------------------'
         } 
         //org1 	
-        //SFDC_HOST='https://login.salesforce.com'
-        //HUB_ORG='replyamijenkins1@yahoo.com'
-	//CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ'
+        SFDC_HOST='https://login.salesforce.com'
+        HUB_ORG='replyamijenkins1@yahoo.com'
+	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ'
         
 
         //org2
