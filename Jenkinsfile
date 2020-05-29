@@ -23,6 +23,10 @@ node {
         checkout scm
     }
    
+	
+	println "env.BRANCH_NAME:"
+	println(env.BRANCH_NAME) 
+	
 
     //JENKINS CREDENTIALS LAPTOP1 AND LAPTOP2-------------------------
         JWT_KEY_CRED_ID='4ce2a556-336a-4c23-b76d-724dc06045ea'  //this uses server.key from Laptop1
