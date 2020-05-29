@@ -35,7 +35,9 @@ node {
     stage('Example') {
 	 echo 'branchname:'
 	 echo branchname
-	 //echo env.BRANCH_NAME   
+	if(barnchname.contains('develop')) { 
+            echo 'Develop branch here---------------------'
+        } 
     }	
 	println "env.BRANCH_NAME:"
 	println(env.BRANCH_NAME) 
