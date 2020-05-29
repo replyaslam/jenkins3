@@ -47,16 +47,16 @@ node {
         JWT_KEY_CRED_ID='4ce2a556-336a-4c23-b76d-724dc06045ea'  //this uses server.key from Laptop1
         //JWT_KEY_CRED_ID='5c813bda-f7d3-4c35-9edf-26076d1673e4'  //this uses server.key from Laptop2
 
+	if(branchname.contains('develop')) { 
+            echo 'Develop branch here---------------------'
+        } 
         //org1 
-        SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins1@yahoo.com'        
-
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReZGNLSvnQPrlIUhn9d3LpPkwPmslUu8PjsPVAO6myXIqyttMQdpBi4ehe7yH'  //this uses server.crt from Laptop1	
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLRecCUlZczZHBwR5z65mioXYYHfGMM8CRXmth2HYqJKPiTxl._PYI9p7NyXuGm'	//this uses server.crt from Laptop2
+	JWT_KEY_CRED_ID='01934d10-5a9b-4e35-a0cb-2742153196f5'
 	
-	//new openSSL version keys
+        SFDC_HOST='https://login.salesforce.com'
+        HUB_ORG='replyamijenkins1@yahoo.com'
 	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ'
-        JWT_KEY_CRED_ID='01934d10-5a9b-4e35-a0cb-2742153196f5'
+        
 
         //org2
         //SFDC_HOST='https://login.salesforce.com'
