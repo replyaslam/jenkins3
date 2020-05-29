@@ -24,6 +24,7 @@ node {
     }
    
     stage('Example') {
+	 echo env.BRANCH_NAME   
         if (env.BRANCH_NAME == 'develop') {
             echo 'this is develop branch'
         } else {
@@ -67,17 +68,9 @@ node {
 
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
-        stage('Deploye Code') {
-            
-           // when { tag "release-*" }
-           // steps {
-           //     echo 'Deploying only because this commit is tagged...'
-           //     sh 'make deploy'
-          //  }
-		
-		
+        stage('Deploye Code') {		
 	    println "${toolbelt}"
-		println "${env.BRANCH_NAME}"
+	    println "${env.BRANCH_NAME}"
 	    //println(env.BRANCH_NAME) 
 		
             println 'this is Windows'
@@ -98,27 +91,11 @@ node {
 			}else{
 				println "toolbelt-AI:"
 				println "\"${toolbelt}\" force:source:deploy --sourcepath manifest/. -u ${HUB_ORG}"
-			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --sourcepath manifest/. -u ${HUB_ORG}"
-				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy -m ApexClass"
-                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:retrieve --manifest c:\projects_sfdx\jenkins2\manifest\package.xml"
-                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:retrieve --manifest c:\projects_sfdx\jenkins2\manifest\package.xml"
-                //rmsg = bat returnStdout: true, script: "sfdx force:source:deploy --sourcepath c:\projects_sfdx\jenkins2\force-app\main\default\classes\AccountController.cls"
-				//println "\"${toolbelt}\" force:source:deploy --sourcepath force-app\main\default\classes\AccountController.cls"
-				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --sourcepath force-app\main\default\classes\AccountController.cls"
-				//$ sfdx force:source:deploy -m ApexClass
 				
 				println "\"${toolbelt}\" force:source:deploy --manifest manifest/. -u ${HUB_ORG}"
-				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest ./manifest/package.xml -u ${HUB_ORG}"
-				//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-                //sfdx force:source:deploy --sourcepath c:\projects_sfdx\jenkins2\force-app\main\default\classes\AccountController.cls
-
-                //sfdx force:source:deploy --manifest c:\projects_sfdx\jenkins2\manifest\package.xml
-                rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest manifest/package.xml -u ${HUB_ORG}"
-                //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-                
-				
-			println('AI-1')	
+                		rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:source:deploy --manifest manifest/package.xml -u ${HUB_ORG}"
+                		//rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+				println('AI-1')	
 			}
 			  
             //printf rmsg
