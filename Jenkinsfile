@@ -69,7 +69,8 @@ node {
            //     sh 'make deploy'
           //  }
 
-	    println "\"${toolbelt}\""
+	    println "${toolbelt}"
+		println "${env.BRANCH_NAME}"
 	    //println(env.BRANCH_NAME) 
 		
             println 'this is Windows'
