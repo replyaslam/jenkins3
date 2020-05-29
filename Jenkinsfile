@@ -53,7 +53,7 @@ node {
         //org1 	
         SFDC_HOST='https://login.salesforce.com'
         HUB_ORG='replyamijenkins1@yahoo.com'
-	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ'
+	CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReZGNLSvnQPrlIUhn9d3LpPkwPmslUu8PjsPVAO6myXIqyttMQdpBi4ehe7yH'
         
 
         //org2
