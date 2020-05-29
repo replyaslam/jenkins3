@@ -19,12 +19,15 @@ node {
     def toolbelt = tool 'toolbelt'
 
     stage('checkout source') {
-	echo 'Pulling...' + env.BRANCH_NAME
+	//echo 'Pulling...' + env.BRANCH_NAME
+	echo 'Pulling... ' + env.GIT_BRANCH
         // when running in multi-branch job, one must issue this command
 	echo '------------------------------'
 	echo scm.branches[0].name
         checkout scm
 	echo scm.branches[0].name
+	    
+
     }
    
     stage('Example') {
