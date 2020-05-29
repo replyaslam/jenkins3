@@ -23,7 +23,13 @@ node {
         checkout scm
     }
    
-	
+    stage('Example') {
+        if (env.BRANCH_NAME == 'develop') {
+            echo 'this is develop branch'
+        } else {
+            echo 'I is elsewhere'
+        }
+    }	
 	println "env.BRANCH_NAME:"
 	println(env.BRANCH_NAME) 
 	
