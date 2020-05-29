@@ -50,18 +50,16 @@ node {
 	if(branchname.contains('develop')) { 
             echo 'Develop branch here---------------------'
         } 
-        //org1 
-	JWT_KEY_CRED_ID='01934d10-5a9b-4e35-a0cb-2742153196f5'
-	
+        //org1 	
         //SFDC_HOST='https://login.salesforce.com'
         //HUB_ORG='replyamijenkins1@yahoo.com'
 	//CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9ouqdpx6TLReXohLykpqvZ1GKJw6_bMafIgGaVD4JuCyLNCBGEHCR9dcSb2JmV6ARYRounJ'
         
 
         //org2
-        SFDC_HOST='https://login.salesforce.com'
-        HUB_ORG='replyamijenkins2@yahoo.com'
-        CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNzgZfh656KIRFlQOEp9Beiq2xm8ue4dInQ0XlHUOfWnghEK1jcDtNTGyCG9y' //this uses server.crt from Laptop1
+        //SFDC_HOST='https://login.salesforce.com'
+       // HUB_ORG='replyamijenkins2@yahoo.com'
+        //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNzgZfh656KIRFlQOEp9Beiq2xm8ue4dInQ0XlHUOfWnghEK1jcDtNTGyCG9y' //this uses server.crt from Laptop1
         //CONNECTED_APP_CONSUMER_KEY='3MVG9xB_D1giir9rQ28.ZSOZMNwTMu9ioZWVzaHgYS4m9IgZSU_8f5K2KD0REdjYN3tQBs2EE6G3rxToF7ztY'  //this uses server.crt from Laptop2
         
 
