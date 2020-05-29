@@ -19,6 +19,7 @@ node {
     def toolbelt = tool 'toolbelt'
 
     stage('checkout source') {
+	echo 'Pulling...' + env.BRANCH_NAME
         // when running in multi-branch job, one must issue this command
         checkout scm
     }
