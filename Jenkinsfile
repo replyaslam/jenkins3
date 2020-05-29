@@ -69,6 +69,18 @@ node {
            //     sh 'make deploy'
           //  }
 
+		steps {
+			script {
+			  if (env.BRANCH_NAME.startsWith('Dev')) {
+				println "Develop branch"
+				//currentBuild.displayName = "#${env.BUILD_NUMBER} - ${env.CHANGE_BRANCH}"
+			  } else {
+				println "Other branch"
+				//currentBuild.displayName = "#${env.BUILD_NUMBER} - ${env.BRANCH_NAME}"
+			  }
+			}
+		  }		
+		
 	    println "${toolbelt}"
 		println "${env.BRANCH_NAME}"
 	    //println(env.BRANCH_NAME) 
