@@ -35,7 +35,7 @@ node {
     stage('Example') {
 	 echo 'branchname:'
 	 echo branchname
-	if(barnchname.contains('develop')) { 
+	if(branchname.contains('develop')) { 
             echo 'Develop branch here---------------------'
         } 
     }	
